@@ -1,0 +1,12 @@
+<%=provide(:title,"Show User Here")%>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%=Time.now %></br>
+        <%= gravatar_for @user %>
+        <%=@user.email %>
+      </h1>
+    </section>
+  </aside>
+</div>
